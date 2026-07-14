@@ -1,5 +1,53 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-07-14T00:00:00Z",
-  "models": []
+  "updated_at": "2026-07-14T16:42:07Z",
+  "models": [
+    {
+      "model_id": "smoketest-n",
+      "family": "smoketest",
+      "size": "n",
+      "target": null,
+      "version_scheme": null,
+      "display_name": "Smoke Test (descartable)",
+      "versions": [
+        {
+          "version": "20260714-164205",
+          "description": "Prueba automática de humo del driver — se borra sola.",
+          "released_at": "2026-07-14T16:39:17Z",
+          "headline_metric": {
+            "label": "dummy",
+            "value": 1.0,
+            "format": "raw"
+          },
+          "extra_metrics": [],
+          "chart_series": [
+            {
+              "key": "loss",
+              "label": "loss"
+            }
+          ],
+          "rows": [
+            {
+              "epoch": 1,
+              "loss": 0.5
+            },
+            {
+              "epoch": 2,
+              "loss": 0.1
+            }
+          ],
+          "artifacts": [
+            {
+              "format": "pt",
+              "filename": "model.pt.enc",
+              "size_bytes": 1091,
+              "sha256_plain": "247e00b04c67870b3488d72e3f0a032c496d2f6e8a2df65ccf4f8fe926123d68",
+              "sha256_enc": "072a81426b7abb828998234f6c3cb9c402b3bf8fbf0b229bd497c1ab1c65c554",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/smoketest-n-20260714-164205/model.pt.enc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
