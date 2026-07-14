@@ -150,15 +150,17 @@
     ].filter(Boolean);
 
     const artifacts = (v.artifacts || [])
-      .map(
-        (a) => `
+      .map((a) => {
+        const isPlain = a.encrypted === false;
+        const icon = isPlain ? "mdi-file-code-outline" : "mdi-lock-outline";
+        return `
       <div class="artifact-row">
         <a href="${esc(a.download_url)}" target="_blank" rel="noopener">
-          <i class="mdi mdi-lock-outline"></i> ${esc(a.format)} — ${fmtSize(a.size_bytes)}
+          <i class="mdi ${icon}"></i> ${esc(a.format)} — ${fmtSize(a.size_bytes)}${isPlain ? " (sin cifrar)" : ""}
         </a>
         <span class="muted">sha256: ${esc((a.sha256_plain || "").slice(0, 12))}…</span>
-      </div>`
-      )
+      </div>`;
+      })
       .join("");
 
     const hasChart = v.rows && v.rows.length > 1 && v.chart_series && v.chart_series.length;
