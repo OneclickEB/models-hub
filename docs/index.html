@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Hub</title>
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img id="brand-logo" src="assets/logo.svg" alt="Model Hub" />
+        <div class="brand-text">
+          <h1 id="site-title">Model Hub</h1>
+          <span id="catalog-meta" class="muted"></span>
+        </div>
+      </div>
+      <a id="repo-link" class="repo-link" href="#" target="_blank" rel="noopener">
+        <i class="mdi mdi-github"></i> Repositorio
+      </a>
+    </div>
+    <div class="search-bar">
+      <i class="mdi mdi-magnify"></i>
+      <input id="search" type="text" placeholder="Buscar por nombre, tamaño, target…" autocomplete="off" />
+      <div class="family-filter" id="family-filter">
+        <button class="family-btn active" data-family="">Todas</button>
+        <button class="family-btn" data-family="lprocr">LPR OCR</button>
+        <button class="family-btn" data-family="yolo">YOLO</button>
+      </div>
+      <span id="result-count" class="muted"></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="state" class="state"></div>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <!-- Modal de detalle -->
+  <div id="detail-overlay" class="overlay hidden">
+    <div id="detail" class="detail-card" role="dialog" aria-modal="true">
+      <div class="detail-header">
+        <i id="detail-icon" class="mdi mdi-brain"></i>
+        <div class="detail-title">
+          <h2 id="detail-name"></h2>
+          <span id="detail-sub" class="muted"></span>
+        </div>
+        <button id="detail-close" class="icon-btn" aria-label="Cerrar"><i class="mdi mdi-close"></i></button>
+      </div>
+      <div class="detail-body">
+        <div id="detail-chips" class="chips"></div>
+        <h3>Versiones</h3>
+        <div id="detail-versions" class="versions"></div>
+        <div class="install-hint">
+          <i class="mdi mdi-lock-outline"></i>
+          <span id="detail-download-hint"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span class="muted">Model Hub — catálogo cifrado de modelos entrenados (YOLO · LPR OCR)</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
