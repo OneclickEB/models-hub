@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-07-15T15:08:39Z",
+  "updated_at": "2026-07-15T15:12:05Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -636,6 +636,95 @@
               "sha256_plain": "0b5672b422713097ada8ba50694ced50314c51af0f821edd670fea9517b934a6",
               "sha256_enc": "3c96610a00e629ea3f51fad01e5c12ba98bf3496f7eb9bced2d6297b272b699f",
               "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/precintos-s.onnx.enc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "lprocr-nv-lpr-s-v2-pt",
+      "family": "lprocr",
+      "size": "s",
+      "tags": [
+        "ocr"
+      ],
+      "version_scheme": "v2",
+      "display_name": "nv-lpr-s-v2.pt",
+      "versions": [
+        {
+          "version": "20260715-151156",
+          "description": "ocr",
+          "released_at": "2026-07-15T15:08:40Z",
+          "size": "s",
+          "tags": [
+            "ocr"
+          ],
+          "headline_metric": {
+            "label": "plate_acc",
+            "value": 0.9984413759796281,
+            "format": "percent"
+          },
+          "extra_metrics": [
+            {
+              "label": "best_epoch",
+              "value": "187"
+            },
+            {
+              "label": "task",
+              "value": "7"
+            },
+            {
+              "label": "proyecto",
+              "value": "ocr7-v2-s"
+            }
+          ],
+          "chart_series": [
+            {
+              "key": "plate_acc",
+              "label": "plate_acc"
+            },
+            {
+              "key": "char_acc",
+              "label": "char_acc"
+            },
+            {
+              "key": "cer",
+              "label": "CER"
+            },
+            {
+              "key": "loss",
+              "label": "loss"
+            }
+          ],
+          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.rows.json",
+          "rows_count": 287,
+          "artifacts": [
+            {
+              "format": "meta",
+              "filename": "nv-lpr-s-v2_meta.json",
+              "size_bytes": 645,
+              "encrypted": false,
+              "sha256_plain": "c024dd5ec63554d96c20632c9d0b9fa6b45206153b09fb119096a8553faee736",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2_meta.json"
+            },
+            {
+              "format": "pt",
+              "filename": "nv-lpr-s-v2.pt.enc",
+              "size_bytes": 2957017,
+              "encrypted": true,
+              "sha256_plain": "c2247c18a17523b2fdb6b977e82a4ba4965b79aecc9e35af2d0416479178e2db",
+              "sha256_enc": "d90cc6ebddea3dd32be6dd122d3fd339cec2c98d3746aa0931a185d2dc60e1ec",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.pt.enc"
+            },
+            {
+              "format": "onnx",
+              "filename": "nv-lpr-s-v2.onnx.enc",
+              "size_bytes": 2949688,
+              "encrypted": true,
+              "sha256_plain": "f0f0b09011a431fc7a88418dd9e75487fe7ba56f47ab2e34b54ebfaee1c4f719",
+              "sha256_enc": "2a6b15eda4ba23c3c4983c0cd0b03615f8db7f51c23a535e9e967f48767999d4",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.onnx.enc"
             }
           ]
         }
