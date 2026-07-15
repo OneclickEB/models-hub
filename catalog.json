@@ -82,7 +82,7 @@
           "rows_count": 415,
           "size": "n",
           "tags": [],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2.rows.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-n/20260715-114332.json"
         }
       ],
       "tags": []
@@ -167,7 +167,7 @@
           "rows_count": 183,
           "size": "m",
           "tags": [],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2.rows.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-m/20260715-124743.json"
         }
       ],
       "tags": []
@@ -252,7 +252,7 @@
           "rows_count": 128,
           "size": "l",
           "tags": [],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2.rows.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-l/20260715-124842.json"
         }
       ],
       "tags": []
@@ -330,7 +330,7 @@
           "tags": [
             "precintos"
           ],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-20260715-140801/project-19-eae223cd-best.rows.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s/20260715-140801.json"
         }
       ],
       "tags": [
@@ -394,7 +394,7 @@
               "label": "val_box_loss"
             }
           ],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-150817/precintos-s.rows.json",
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s-pt/20260715-150817.json",
           "rows_count": 1426,
           "artifacts": [
             {
@@ -462,7 +462,7 @@
               "label": "val_box_loss"
             }
           ],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145245/precintos-s.rows.json",
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s-pt/20260715-145245.json",
           "rows_count": 1426,
           "artifacts": [
             {
@@ -531,7 +531,7 @@
               "label": "val_box_loss"
             }
           ],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/precintos-s.rows.json",
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s-pt/20260715-145215.json",
           "rows_count": 1426,
           "artifacts": [
             {
@@ -611,7 +611,7 @@
               "label": "loss"
             }
           ],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.rows.json",
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-nv-lpr-s-v2-pt/20260715-151156.json",
           "rows_count": 287,
           "artifacts": [
             {
@@ -716,7 +716,7 @@
           "rows_count": 287,
           "size": "s",
           "tags": [],
-          "rows_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2.rows.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-nv-lpr-s-v2-pt/20260715-124655.json"
         }
       ]
     }
