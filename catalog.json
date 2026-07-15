@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-07-15T15:31:06Z",
+  "updated_at": "2026-07-15T21:57:35Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -784,6 +784,52 @@
           "size": "s",
           "tags": [],
           "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-nv-lpr-s-v2-pt/20260715-124655.json"
+        }
+      ]
+    },
+    {
+      "model_id": "yolo-precintos-s-snpe-qcs6490-fp32-dlc",
+      "family": "yolo",
+      "size": "",
+      "tags": [
+        "precintos"
+      ],
+      "version_scheme": null,
+      "display_name": "precintos-s_snpe_qcs6490_fp32.dlc",
+      "versions": [
+        {
+          "version": "20260715-215719",
+          "description": "",
+          "released_at": "2026-07-15T15:31:07Z",
+          "size": "",
+          "tags": [
+            "precintos"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s-snpe-qcs6490-fp32-dlc/20260715-215719.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "format": "meta",
+              "filename": "precintos-s_snpe_qcs6490_fp32_meta.json",
+              "size_bytes": 509,
+              "encrypted": false,
+              "sha256_plain": "7b6f8100cc9316e60586bce9b05c07142dba927b86c761c57fc5b58eef76b100",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32_meta.json"
+            },
+            {
+              "format": "dlc",
+              "filename": "precintos-s_snpe_qcs6490_fp32.dlc.enc",
+              "size_bytes": 38116918,
+              "encrypted": true,
+              "sha256_plain": "181005a1140d52fc882e6c3acc9cd7052c59e48b7b5d0ee903178709e6fc5c02",
+              "sha256_enc": "e5dda5650c4099085e96ecce395a56e0183033a704309353e18fe7ea7b62d680",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32.dlc.enc"
+            }
+          ]
         }
       ]
     }
