@@ -41,6 +41,10 @@
     return String(hm.value);
   }
 
+  function tagChips(m) {
+    return (m.tags || []).map((t) => `<span class="chip">${esc(t)}</span>`).join("");
+  }
+
   function cardHtml(m) {
     const latest = latestVersion(m);
     const hm = latest ? latest.headline_metric : null;
@@ -49,7 +53,7 @@
       `<span class="chip family-${esc(m.family)}">${esc(m.family)}</span>`,
       `<span class="chip">talla ${esc(m.size || "?")}</span>`,
     ];
-    if (m.target) chips.push(`<span class="chip">${esc(m.target)}</span>`);
+    chips.push(tagChips(m));
     if (m.version_scheme) chips.push(`<span class="chip">${esc(m.version_scheme)}</span>`);
     return `
       <div class="card" data-id="${esc(m.model_id)}">
@@ -89,7 +93,7 @@
     if (activeFamily) list = list.filter((m) => m.family === activeFamily);
     if (q) {
       list = list.filter((m) => {
-        const hay = [m.display_name, m.model_id, m.size, m.target, m.family]
+        const hay = [m.display_name, m.model_id, m.size, m.family, ...(m.tags || [])]
           .join(" ").toLowerCase();
         return hay.includes(q);
       });
@@ -120,7 +124,7 @@
       `<span class="chip family-${esc(m.family)}">${esc(m.family)}</span>`,
       `<span class="chip">talla ${esc(m.size || "?")}</span>`,
     ];
-    if (m.target) chips.push(`<span class="chip">${esc(m.target)}</span>`);
+    chips.push(tagChips(m));
     if (m.version_scheme) chips.push(`<span class="chip">${esc(m.version_scheme)}</span>`);
     document.getElementById("detail-chips").innerHTML = chips.join("");
 
@@ -129,16 +133,32 @@
 
     $overlay.classList.remove("hidden");
 
-    // Los charts se dibujan después de insertar el HTML (necesitan el canvas en el DOM)
+    // Las filas de métricas ya no viven inline en catalog.json (rows_url
+    // apunta a un asset propio subido junto con el modelo — ver
+    // model_hub/publisher.py) para que el catálogo compartido no vuelva a
+    // superar 1MB y romper su propia lectura. Los charts se dibujan una vez
+    // insertado el HTML (necesitan el canvas en el DOM) y, si hace falta,
+    // tras resolver ese fetch.
     versions.forEach((v, i) => {
       const canvas = document.getElementById(`chart-${i}`);
-      if (!canvas || !v.chart_series || !v.rows) return;
-      const legend = window.ModelHubChart.drawTrainingChart(canvas, v.rows, v.chart_series);
-      const legendEl = document.getElementById(`legend-${i}`);
-      if (legendEl) {
-        legendEl.innerHTML = legend
-          .map((l) => `<span><i style="background:${l.color}"></i>${esc(l.label)}: ${fmtNum(l.last)}</span>`)
-          .join("");
+      if (!canvas || !v.chart_series || !v.chart_series.length) return;
+      const draw = (rows) => {
+        if (!rows || rows.length < 2) return;
+        const legend = window.ModelHubChart.drawTrainingChart(canvas, rows, v.chart_series);
+        const legendEl = document.getElementById(`legend-${i}`);
+        if (legendEl) {
+          legendEl.innerHTML = legend
+            .map((l) => `<span><i style="background:${l.color}"></i>${esc(l.label)}: ${fmtNum(l.last)}</span>`)
+            .join("");
+        }
+      };
+      if (v.rows) {
+        draw(v.rows); // entradas viejas, previas a rows_url — compat
+      } else if (v.rows_url) {
+        fetch(v.rows_url, { cache: "force-cache" })
+          .then((r) => (r.ok ? r.json() : []))
+          .then(draw)
+          .catch(() => {});
       }
     });
   }
@@ -163,7 +183,7 @@
       })
       .join("");
 
-    const hasChart = v.rows && v.rows.length > 1 && v.chart_series && v.chart_series.length;
+    const hasChart = (v.rows_url || (v.rows && v.rows.length > 1)) && v.chart_series && v.chart_series.length;
 
     return `
       <div class="version-row">
