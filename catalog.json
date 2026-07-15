@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-07-15T21:57:35Z",
+  "updated_at": "2026-07-15T22:00:03Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -828,6 +828,97 @@
               "sha256_plain": "181005a1140d52fc882e6c3acc9cd7052c59e48b7b5d0ee903178709e6fc5c02",
               "sha256_enc": "e5dda5650c4099085e96ecce395a56e0183033a704309353e18fe7ea7b62d680",
               "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32.dlc.enc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo-barranqueras",
+      "family": "yolo",
+      "size": "",
+      "tags": [
+        "barranqueras"
+      ],
+      "version_scheme": null,
+      "display_name": "barranqueras",
+      "versions": [
+        {
+          "version": "20260715-215903",
+          "description": "",
+          "released_at": "2026-07-15T21:57:35Z",
+          "size": "",
+          "tags": [
+            "barranqueras"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-barranqueras/20260715-215903.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "format": "meta",
+              "filename": "barranqueras_meta.json",
+              "size_bytes": 408,
+              "encrypted": false,
+              "sha256_plain": "cb24bfe87fa853ec4e5fa2353a6a91e02f8b7969d4eb5072b921cc4e5fddef97",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras_meta.json"
+            },
+            {
+              "format": "meta_snpe_qcs6490_fp32",
+              "filename": "barranqueras.meta_snpe_qcs6490_fp32.json",
+              "size_bytes": 477,
+              "encrypted": false,
+              "sha256_plain": "f0fea19cc8e846df77a88fe77d6d1a0e07851cc287ecb154b94f215f3684dcc9",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.meta_snpe_qcs6490_fp32.json"
+            },
+            {
+              "format": "meta_snpe_qcs8550_fp32",
+              "filename": "barranqueras.meta_snpe_qcs8550_fp32.json",
+              "size_bytes": 477,
+              "encrypted": false,
+              "sha256_plain": "935e20498c1d7fb5dd197bf7657be0bac030e7b39e83396281e204f27c9a4344",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.meta_snpe_qcs8550_fp32.json"
+            },
+            {
+              "format": "dlc_6490_fp32",
+              "filename": "barranqueras.dlc_6490_fp32.enc",
+              "size_bytes": 44883478,
+              "encrypted": true,
+              "sha256_plain": "d9b5fb87dd1c37b50d5cd5b87597883ab03e0a3d8d46e3648e82d8fd497baaa4",
+              "sha256_enc": "1b226979a90b439a5ebc6143969e3a1e9607db4a8c58506cd77271255639e532",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.dlc_6490_fp32.enc"
+            },
+            {
+              "format": "dlc_8550_fp32",
+              "filename": "barranqueras.dlc_8550_fp32.enc",
+              "size_bytes": 44883478,
+              "encrypted": true,
+              "sha256_plain": "894a59199a85bb706b9227efa1c486eada2205069de44bfcc1ffd925c0d6f0bd",
+              "sha256_enc": "9b06e228fda8d8647a477bfa85fea24e06ab74c0e248d9579068ebd710633eb9",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.dlc_8550_fp32.enc"
+            },
+            {
+              "format": "pt",
+              "filename": "barranqueras.pt.enc",
+              "size_bytes": 22537045,
+              "encrypted": true,
+              "sha256_plain": "2ebc84c868d14fd10f8735032891c87448b8f4fba0fe1ca5937aed4e2fe85497",
+              "sha256_enc": "36128c771ff59a53ca3ecd22d9cae30b315590c2f8f45d2ceb11e703a9023b97",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.pt.enc"
+            },
+            {
+              "format": "onnx",
+              "filename": "barranqueras.onnx.enc",
+              "size_bytes": 44746525,
+              "encrypted": true,
+              "sha256_plain": "c51acb95a70fb7d0c8636291abe48fc33c5980880a5351ddf03a90cb112065fa",
+              "sha256_enc": "dd72c21724e1afaabd538d26d53c3be80ed9ae2e91f0975dcc036234af73e6dd",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.onnx.enc"
             }
           ]
         }
