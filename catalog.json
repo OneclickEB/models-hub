@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-07-15T15:12:05Z",
+  "updated_at": "2026-07-15T15:31:06Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -342,12 +342,79 @@
       "family": "yolo",
       "size": "s",
       "tags": [
-        "precinto",
-        "tapa"
+        "precintos"
       ],
       "version_scheme": null,
       "display_name": "precintos-s.pt",
       "versions": [
+        {
+          "version": "20260715-153049",
+          "description": "Verificación fix CORS rows_url",
+          "released_at": "2026-07-15T15:29:14Z",
+          "size": "s",
+          "tags": [
+            "precintos"
+          ],
+          "headline_metric": {
+            "label": "mAP50-95",
+            "value": 0.79063,
+            "format": "number"
+          },
+          "extra_metrics": [
+            {
+              "label": "best_epoch",
+              "value": "427"
+            }
+          ],
+          "chart_series": [
+            {
+              "key": "metrics/mAP50-95(B)",
+              "label": "mAP50-95"
+            },
+            {
+              "key": "metrics/mAP50(B)",
+              "label": "mAP50"
+            },
+            {
+              "key": "metrics/precision(B)",
+              "label": "precision"
+            },
+            {
+              "key": "metrics/recall(B)",
+              "label": "recall"
+            },
+            {
+              "key": "train/box_loss",
+              "label": "box_loss"
+            },
+            {
+              "key": "val/box_loss",
+              "label": "val_box_loss"
+            }
+          ],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s-pt/20260715-153049.json",
+          "rows_count": 1426,
+          "artifacts": [
+            {
+              "format": "pt",
+              "filename": "precintos-s.pt.enc",
+              "size_bytes": 19341452,
+              "encrypted": true,
+              "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
+              "sha256_enc": "f10917a395fe73c482af758c14202aab50ea8a545378e948d11625d2c7d9848b",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/precintos-s.pt.enc"
+            },
+            {
+              "format": "onnx",
+              "filename": "precintos-s.onnx.enc",
+              "size_bytes": 37819893,
+              "encrypted": true,
+              "sha256_plain": "6142cb5f964c156e9418e6862353bb1104562b554fbf41091f60c1013ae0d477",
+              "sha256_enc": "42103d5668063201b8adad480c5707ea36418cbdee5648e66953fe826fad8ebf",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/precintos-s.onnx.enc"
+            }
+          ]
+        },
         {
           "version": "20260715-150817",
           "description": "Precintos para YPF",
