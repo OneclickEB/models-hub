@@ -58,7 +58,9 @@
               "encrypted": false,
               "sha256_plain": "e61888e5e8609760ed4af7fd8d47124256b5148863f2148a0110c4a600ade4e5",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "pt",
@@ -67,7 +69,9 @@
               "encrypted": true,
               "sha256_plain": "444c0b04c922841bde6e8980c9aee1a3b26c58447426a17ffa5496c66334c127",
               "sha256_enc": "b2c1540c6b9b1a27fd399e29a494c6fb3701b98d2b4a9c2ae8b99c4134586054",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -76,13 +80,21 @@
               "encrypted": true,
               "sha256_plain": "796a12c1b0c1db6d7403971e2b29db437b9d4d9ae8ee98dccd0cd1f0d1869bab",
               "sha256_enc": "8c3c91343013b9f8dd388485a2e02547c6a6538e233e6aee15fe36fff80f4d59",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/nv-lpr-n-v2.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
           ],
           "rows_count": 415,
           "size": "n",
           "tags": [],
-          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-n/20260715-114332.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-n/20260715-114332.json",
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "9af0c7f1b1a53a72922f561e8837f257b44807bd2bc5899e21153b7847f6faee",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-n-20260715-114332/manifest.json",
+            "release_id": "lprocr-v2-n-20260715-114332"
+          }
         }
       ],
       "tags": []
@@ -143,7 +155,9 @@
               "encrypted": false,
               "sha256_plain": "221086e507256f1a730ea86f0a5c11749ccedc5f00c6e7e0920d0f7cdccfc746",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "pt",
@@ -152,7 +166,9 @@
               "encrypted": true,
               "sha256_plain": "ea3649a526c748f70926491036a6728c44925519203972b1451da52a0f4ca955",
               "sha256_enc": "8c946ab69b28a5c1af956494478bcd086a0299150e08b883d07fb1f00901e49e",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -161,13 +177,21 @@
               "encrypted": true,
               "sha256_plain": "a23edbe7389550ee5519bf06b36395e630f3ea691704ebb6cf7395d011ec10d0",
               "sha256_enc": "63b6a6f1a98d940615479702c68ba2bb405bbc48a080331266b0df3136fa32f9",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/nv-lpr-m-v2.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
           ],
           "rows_count": 183,
           "size": "m",
           "tags": [],
-          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-m/20260715-124743.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-m/20260715-124743.json",
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "4a95e61ef9817986f4a8da2f2d9fafa79dfecc86ce1b3ae31097dad7fcc1fd8a",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-m-20260715-124743/manifest.json",
+            "release_id": "lprocr-v2-m-20260715-124743"
+          }
         }
       ],
       "tags": []
@@ -228,7 +252,9 @@
               "encrypted": false,
               "sha256_plain": "a71fa4f70398b9e53537d86a0b057aceb97237b539dd881817467a600d7bee70",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "pt",
@@ -237,7 +263,9 @@
               "encrypted": true,
               "sha256_plain": "d4a8ef111cf1a764d85e486153071424d413b31c52f75b9cc0b4666b1bd818aa",
               "sha256_enc": "a1ae538ee279cf0ccae87e1bd77b167eba88dc46d259f85098f982dea02a324f",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -246,13 +274,21 @@
               "encrypted": true,
               "sha256_plain": "d03ce4fa0439b84db22b9a46094468cbd2d3c69093f369da313c0a2a96995fed",
               "sha256_enc": "56ac8d64ac80a34a15cb3219be19ed6e714a9d97ae9813490ca8bd35568e4cac",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/nv-lpr-l-v2.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
           ],
           "rows_count": 128,
           "size": "l",
           "tags": [],
-          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-l/20260715-124842.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-v2-l/20260715-124842.json",
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "78fc15a4f017772146a5b0176504f3e5e1c1d8fb9bf34c8be6318da769761468",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-l-20260715-124842/manifest.json",
+            "release_id": "lprocr-v2-l-20260715-124842"
+          }
         }
       ],
       "tags": []
@@ -313,7 +349,9 @@
               "encrypted": true,
               "sha256_plain": "199d971da0e47b9d1069f1209b8e096e4a9f6c20d91644a7233a03690f5b101e",
               "sha256_enc": "b596f292a19e2bd1fc9a7c1f52ab33323b801848c9d25012cda4c06c0dca6f2b",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-20260715-140801/project-19-eae223cd-best.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-20260715-140801/project-19-eae223cd-best.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -322,7 +360,9 @@
               "encrypted": true,
               "sha256_plain": "553ab17519b5990fc1747a33180983250b391ccf45f72afc32253700eb1d1bcb",
               "sha256_enc": "3bf71d427f36e2809e59a2237a2f5460c8f74f85539098a566fa673dec1640a4",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-20260715-140801/project-19-eae223cd-best.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-20260715-140801/project-19-eae223cd-best.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
           ],
           "rows_count": 1827,
@@ -330,7 +370,13 @@
           "tags": [
             "precintos"
           ],
-          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s/20260715-140801.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s/20260715-140801.json",
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "7ac2eb69bbcb1d648a151291bfacd5289497a67beebef5e936279d2d11e646e9",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-20260715-140801/manifest.json",
+            "release_id": "yolo-precintos-s-20260715-140801"
+          }
         }
       ],
       "tags": [
@@ -368,7 +414,9 @@
               "encrypted": false,
               "sha256_plain": "631d49625b7d0a4dd6a7b2d20699fba4babf38e97f272588480003ef2bdf79da",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "meta_snpe_qcs6490_fp32",
@@ -377,7 +425,9 @@
               "encrypted": false,
               "sha256_plain": "7b6f8100cc9316e60586bce9b05c07142dba927b86c761c57fc5b58eef76b100",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.meta_snpe_qcs6490_fp32.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.meta_snpe_qcs6490_fp32.json",
+              "artifact_id": "meta6490",
+              "role": "metadata"
             },
             {
               "format": "meta_snpe_qcs8550_fp32",
@@ -386,7 +436,9 @@
               "encrypted": false,
               "sha256_plain": "812db2d2670425fd210320e002d2bf153610513a5e2d705d117216091aebce9e",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.meta_snpe_qcs8550_fp32.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.meta_snpe_qcs8550_fp32.json",
+              "artifact_id": "meta8550",
+              "role": "metadata"
             },
             {
               "format": "dlc_6490_fp32",
@@ -395,7 +447,10 @@
               "encrypted": true,
               "sha256_plain": "f1e9b0848a79083e45935847e9c9e55103bc5b3484095ac1e323952bee93eecf",
               "sha256_enc": "6838b5578ac1755333ef427f6458840df2d9c7864260068254c2650b65489dce",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.dlc_6490_fp32.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.dlc_6490_fp32.enc",
+              "artifact_id": "dlc6490",
+              "role": "weights",
+              "target": "qcs6490"
             },
             {
               "format": "dlc_8550_fp32",
@@ -404,7 +459,10 @@
               "encrypted": true,
               "sha256_plain": "98a0d1a650aa746bc82fc4ddaf51550b5c9820d53f8d80366dcd44c6fadf675f",
               "sha256_enc": "78fb6a8f7dc19853fe9fb4d76e94da43574df4a0aac30c926a83d9820f5bd8a1",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.dlc_8550_fp32.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.dlc_8550_fp32.enc",
+              "artifact_id": "dlc8550",
+              "role": "weights",
+              "target": "qcs8550"
             },
             {
               "format": "pt",
@@ -413,7 +471,9 @@
               "encrypted": true,
               "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
               "sha256_enc": "b4178584e129e482e5eba1690e25061fd81aa50601075d426615d4525afca9fb",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -422,9 +482,17 @@
               "encrypted": true,
               "sha256_plain": "3ed2aae6410b9cc02f5a5d43816686da432ebefaed44fe01333a7872aa3e0835",
               "sha256_enc": "c7259ad82fb2455ab1b7856e48da761d78aa0248e430963b741640e9b27f0cce",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "5641a4440d9d02387ef369309a09d8c3913e8267858c0c060c15972d64eb4bbf",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260721-170738/manifest.json",
+            "release_id": "yolo-precintos-s-pt-20260721-170738"
+          }
         },
         {
           "version": "20260715-153049",
@@ -481,7 +549,9 @@
               "encrypted": true,
               "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
               "sha256_enc": "f10917a395fe73c482af758c14202aab50ea8a545378e948d11625d2c7d9848b",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/precintos-s.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -490,9 +560,17 @@
               "encrypted": true,
               "sha256_plain": "6142cb5f964c156e9418e6862353bb1104562b554fbf41091f60c1013ae0d477",
               "sha256_enc": "42103d5668063201b8adad480c5707ea36418cbdee5648e66953fe826fad8ebf",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/precintos-s.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "42349efa9d58fd64543ec7906f85af1e936855eb10d4312b1d8ae1d8dbf9221d",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-153049/manifest.json",
+            "release_id": "yolo-precintos-s-pt-20260715-153049"
+          }
         },
         {
           "version": "20260715-150817",
@@ -550,7 +628,9 @@
               "encrypted": true,
               "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
               "sha256_enc": "1e535d46f3165fb63e001c972c95b1c78eef28328cd8b01ea09abeb002938e4b",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-150817/precintos-s.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-150817/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -559,9 +639,17 @@
               "encrypted": true,
               "sha256_plain": "8645e0c7d6e3cdbdeb8552e85d4466284446102b78d854f6695900fc680699d4",
               "sha256_enc": "f6f81bc9bb5fa887efc2fadb6ae852e2c1df7828e904f4ef5c7e6a605fb8e1da",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-150817/precintos-s.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-150817/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "aac7bdda205eaa68055ae3a121a51ec2bdf1ba20bd545fdcc664f0993a21d17c",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-150817/manifest.json",
+            "release_id": "yolo-precintos-s-pt-20260715-150817"
+          }
         },
         {
           "version": "20260715-145245",
@@ -618,7 +706,9 @@
               "encrypted": true,
               "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
               "sha256_enc": "c7d167f505ce50fdf846bc94122e083638a6e0ea1309b8b23d0f9eca0d738bcf",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145245/precintos-s.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145245/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -627,9 +717,17 @@
               "encrypted": true,
               "sha256_plain": "ad0063fa52b007d90f5b6e0d84f42eeddcf65ef3126d7fc6bb787506a4673a68",
               "sha256_enc": "f83e4993a896957376ad23518be3b57f7785c6d5519d55cd4c5f8e1e39e7477e",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145245/precintos-s.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145245/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "6d14db9a4f39a1a18974eb168c8c201ae51852f6e3abdaea50adaf1d5a69cbf8",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145245/manifest.json",
+            "release_id": "yolo-precintos-s-pt-20260715-145245"
+          }
         },
         {
           "version": "20260715-145215",
@@ -687,7 +785,9 @@
               "encrypted": true,
               "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
               "sha256_enc": "119592e9f4e7f98d325bc67a5dc83a1e446d6c2b4d4584672cb1d1385e9dcb8b",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/precintos-s.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -696,9 +796,17 @@
               "encrypted": true,
               "sha256_plain": "0b5672b422713097ada8ba50694ced50314c51af0f821edd670fea9517b934a6",
               "sha256_enc": "3c96610a00e629ea3f51fad01e5c12ba98bf3496f7eb9bced2d6297b272b699f",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/precintos-s.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "392a53e05c11a68516f08dd4508f545e41ceaf05c78ebc05cc8a9290e0497d98",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260715-145215/manifest.json",
+            "release_id": "yolo-precintos-s-pt-20260715-145215"
+          }
         }
       ]
     },
@@ -767,7 +875,9 @@
               "encrypted": false,
               "sha256_plain": "c024dd5ec63554d96c20632c9d0b9fa6b45206153b09fb119096a8553faee736",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "pt",
@@ -776,7 +886,9 @@
               "encrypted": true,
               "sha256_plain": "c2247c18a17523b2fdb6b977e82a4ba4965b79aecc9e35af2d0416479178e2db",
               "sha256_enc": "d90cc6ebddea3dd32be6dd122d3fd339cec2c98d3746aa0931a185d2dc60e1ec",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -785,9 +897,17 @@
               "encrypted": true,
               "sha256_plain": "f0f0b09011a431fc7a88418dd9e75487fe7ba56f47ab2e34b54ebfaee1c4f719",
               "sha256_enc": "2a6b15eda4ba23c3c4983c0cd0b03615f8db7f51c23a535e9e967f48767999d4",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/nv-lpr-s-v2.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "5ab1b6b2d11303aa34b6a4c9231b31b58b4bb5eca776670b862c129ea6aed00c",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-s-v2-pt-20260715-151156/manifest.json",
+            "release_id": "lprocr-nv-lpr-s-v2-pt-20260715-151156"
+          }
         },
         {
           "version": "20260715-124655",
@@ -838,7 +958,9 @@
               "encrypted": false,
               "sha256_plain": "c024dd5ec63554d96c20632c9d0b9fa6b45206153b09fb119096a8553faee736",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "pt",
@@ -847,7 +969,9 @@
               "encrypted": true,
               "sha256_plain": "c2247c18a17523b2fdb6b977e82a4ba4965b79aecc9e35af2d0416479178e2db",
               "sha256_enc": "0d3764679f7f1e844aed913c9f5e520cad406533586171ea229c2b84fb9bd20c",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -856,13 +980,21 @@
               "encrypted": true,
               "sha256_plain": "f0f0b09011a431fc7a88418dd9e75487fe7ba56f47ab2e34b54ebfaee1c4f719",
               "sha256_enc": "adcca38ff59a489e573a941abc138098a1d8420807280a30fbadee9c54860533",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/nv-lpr-s-v2.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
           ],
           "rows_count": 287,
           "size": "s",
           "tags": [],
-          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-nv-lpr-s-v2-pt/20260715-124655.json"
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-nv-lpr-s-v2-pt/20260715-124655.json",
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "edc7366f1a686ee60c24575d6c35201b6d92863c254ef40576bc5f5daa83615d",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-v2-s-20260715-124655/manifest.json",
+            "release_id": "lprocr-v2-s-20260715-124655"
+          }
         }
       ]
     },
@@ -897,7 +1029,9 @@
               "encrypted": false,
               "sha256_plain": "7b6f8100cc9316e60586bce9b05c07142dba927b86c761c57fc5b58eef76b100",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32_meta.json",
+              "artifact_id": "meta6490",
+              "role": "metadata"
             },
             {
               "format": "dlc",
@@ -906,9 +1040,18 @@
               "encrypted": true,
               "sha256_plain": "181005a1140d52fc882e6c3acc9cd7052c59e48b7b5d0ee903178709e6fc5c02",
               "sha256_enc": "e5dda5650c4099085e96ecce395a56e0183033a704309353e18fe7ea7b62d680",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32.dlc.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/precintos-s_snpe_qcs6490_fp32.dlc.enc",
+              "artifact_id": "dlc6490",
+              "role": "weights",
+              "target": "qcs6490"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "c5c539d8bce331bd4888b05f97ceb105235296e238b8aa09415f58934d7a1326",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719/manifest.json",
+            "release_id": "yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719"
+          }
         }
       ]
     },
@@ -943,7 +1086,9 @@
               "encrypted": false,
               "sha256_plain": "cb24bfe87fa853ec4e5fa2353a6a91e02f8b7969d4eb5072b921cc4e5fddef97",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "meta_snpe_qcs6490_fp32",
@@ -952,7 +1097,9 @@
               "encrypted": false,
               "sha256_plain": "f0fea19cc8e846df77a88fe77d6d1a0e07851cc287ecb154b94f215f3684dcc9",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.meta_snpe_qcs6490_fp32.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.meta_snpe_qcs6490_fp32.json",
+              "artifact_id": "meta6490",
+              "role": "metadata"
             },
             {
               "format": "meta_snpe_qcs8550_fp32",
@@ -961,7 +1108,9 @@
               "encrypted": false,
               "sha256_plain": "935e20498c1d7fb5dd197bf7657be0bac030e7b39e83396281e204f27c9a4344",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.meta_snpe_qcs8550_fp32.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.meta_snpe_qcs8550_fp32.json",
+              "artifact_id": "meta8550",
+              "role": "metadata"
             },
             {
               "format": "dlc_6490_fp32",
@@ -970,7 +1119,10 @@
               "encrypted": true,
               "sha256_plain": "d9b5fb87dd1c37b50d5cd5b87597883ab03e0a3d8d46e3648e82d8fd497baaa4",
               "sha256_enc": "1b226979a90b439a5ebc6143969e3a1e9607db4a8c58506cd77271255639e532",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.dlc_6490_fp32.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.dlc_6490_fp32.enc",
+              "artifact_id": "dlc6490",
+              "role": "weights",
+              "target": "qcs6490"
             },
             {
               "format": "dlc_8550_fp32",
@@ -979,7 +1131,10 @@
               "encrypted": true,
               "sha256_plain": "894a59199a85bb706b9227efa1c486eada2205069de44bfcc1ffd925c0d6f0bd",
               "sha256_enc": "9b06e228fda8d8647a477bfa85fea24e06ab74c0e248d9579068ebd710633eb9",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.dlc_8550_fp32.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.dlc_8550_fp32.enc",
+              "artifact_id": "dlc8550",
+              "role": "weights",
+              "target": "qcs8550"
             },
             {
               "format": "pt",
@@ -988,7 +1143,9 @@
               "encrypted": true,
               "sha256_plain": "2ebc84c868d14fd10f8735032891c87448b8f4fba0fe1ca5937aed4e2fe85497",
               "sha256_enc": "36128c771ff59a53ca3ecd22d9cae30b315590c2f8f45d2ceb11e703a9023b97",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -997,9 +1154,17 @@
               "encrypted": true,
               "sha256_plain": "c51acb95a70fb7d0c8636291abe48fc33c5980880a5351ddf03a90cb112065fa",
               "sha256_enc": "dd72c21724e1afaabd538d26d53c3be80ed9ae2e91f0975dcc036234af73e6dd",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/barranqueras.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "c21c5d78739e10aadcd76a0bb370c12938c33e04ca9c14f3e7b0fee5f3795e7d",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-barranqueras-20260715-215903/manifest.json",
+            "release_id": "yolo-barranqueras-20260715-215903"
+          }
         }
       ]
     },
@@ -1070,7 +1235,9 @@
               "encrypted": false,
               "sha256_plain": "e8d53cc7c3d4bab52aed7b2bba03c54e8c8f6d68dbe6c27a67cb9df1240c583d",
               "sha256_enc": null,
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/nv-lpr-x-v2_meta.json"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/nv-lpr-x-v2_meta.json",
+              "artifact_id": "src_meta",
+              "role": "metadata"
             },
             {
               "format": "pt",
@@ -1079,7 +1246,9 @@
               "encrypted": true,
               "sha256_plain": "8ef3443e8347f96f0b95a468f76e897d3c4eeca878e96f88a207f4928db7ed8b",
               "sha256_enc": "c7e4014e1595f8d4d4afc77491c65f57982b903fbdb8638ba1bfe70ce1911223",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/nv-lpr-x-v2.pt.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/nv-lpr-x-v2.pt.enc",
+              "artifact_id": "pt",
+              "role": "source"
             },
             {
               "format": "onnx",
@@ -1088,9 +1257,17 @@
               "encrypted": true,
               "sha256_plain": "e32b5140436bd1266e221e71292820873b816b2abd12d36cb7b44513a44b134d",
               "sha256_enc": "53d259082accf5952aa81f489b982c2c787c247a9ce01e54765ff58e78b57345",
-              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/nv-lpr-x-v2.onnx.enc"
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/nv-lpr-x-v2.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source"
             }
-          ]
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "c759ce7a877cef28bc916e4cf9dbd7233dcb2af2d46b6617f71ecac5454cc64e",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/manifest.json",
+            "release_id": "lprocr-nv-lpr-x-v2-pt-20260720-112448"
+          }
         }
       ]
     }

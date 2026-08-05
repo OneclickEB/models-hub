@@ -1,0 +1,800 @@
+{
+  "generated_at": "2026-08-05T16:34:00Z",
+  "catalog_version": "1",
+  "releases_total": 14,
+  "releases_by_status": {
+    "verify": 14
+  },
+  "releases": [
+    {
+      "model_id": "lprocr-v2-n",
+      "version": "20260715-114332",
+      "tag": "lprocr-v2-n-20260715-114332",
+      "release_id": "lprocr-v2-n-20260715-114332",
+      "created_at": "2026-07-14T19:30:12Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "nv-lpr-n-v2_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "nv-lpr-n-v2.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "nv-lpr-n-v2.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "lprocr-v2-m",
+      "version": "20260715-124743",
+      "tag": "lprocr-v2-m-20260715-124743",
+      "release_id": "lprocr-v2-m-20260715-124743",
+      "created_at": "2026-07-15T12:47:02Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "nv-lpr-m-v2_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "nv-lpr-m-v2.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "nv-lpr-m-v2.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "lprocr-v2-l",
+      "version": "20260715-124842",
+      "tag": "lprocr-v2-l-20260715-124842",
+      "release_id": "lprocr-v2-l-20260715-124842",
+      "created_at": "2026-07-15T12:48:01Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "nv-lpr-l-v2_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "nv-lpr-l-v2.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "nv-lpr-l-v2.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s",
+      "version": "20260715-140801",
+      "tag": "yolo-precintos-s-20260715-140801",
+      "release_id": "yolo-precintos-s-20260715-140801",
+      "created_at": "2026-07-15T12:49:30Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "project-19-eae223cd-best.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "project-19-eae223cd-best.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx"
+          ],
+          "requires": [],
+          "sidecar_for": {}
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s-pt",
+      "version": "20260721-170738",
+      "tag": "yolo-precintos-s-pt-20260721-170738",
+      "release_id": "yolo-precintos-s-pt-20260721-170738",
+      "created_at": "2026-07-20T11:26:00Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "meta6490",
+        "meta8550",
+        "dlc6490",
+        "dlc8550",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "precintos-s_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "meta_snpe_qcs6490_fp32",
+          "v2_id": "meta6490",
+          "role": "metadata",
+          "filename_plain": "precintos-s.meta_snpe_qcs6490_fp32.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "meta_snpe_qcs8550_fp32",
+          "v2_id": "meta8550",
+          "role": "metadata",
+          "filename_plain": "precintos-s.meta_snpe_qcs8550_fp32.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "dlc_6490_fp32",
+          "v2_id": "dlc6490",
+          "role": "weights",
+          "filename_plain": "precintos-s.dlc_6490_fp32",
+          "encrypted": true
+        },
+        {
+          "v1_format": "dlc_8550_fp32",
+          "v2_id": "dlc8550",
+          "role": "weights",
+          "filename_plain": "precintos-s.dlc_8550_fp32",
+          "encrypted": true
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "precintos-s.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "precintos-s.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        },
+        {
+          "artifact_set": "snpe-qcs6490",
+          "entrypoint": "dlc6490",
+          "members": [
+            "dlc6490",
+            "meta6490"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "meta6490": "dlc6490"
+          }
+        },
+        {
+          "artifact_set": "snpe-qcs8550",
+          "entrypoint": "dlc8550",
+          "members": [
+            "dlc8550",
+            "meta8550"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "meta8550": "dlc8550"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s-pt",
+      "version": "20260715-153049",
+      "tag": "yolo-precintos-s-pt-20260715-153049",
+      "release_id": "yolo-precintos-s-pt-20260715-153049",
+      "created_at": "2026-07-15T15:29:14Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "precintos-s.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "precintos-s.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx"
+          ],
+          "requires": [],
+          "sidecar_for": {}
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s-pt",
+      "version": "20260715-150817",
+      "tag": "yolo-precintos-s-pt-20260715-150817",
+      "release_id": "yolo-precintos-s-pt-20260715-150817",
+      "created_at": "2026-07-15T14:58:30Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "precintos-s.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "precintos-s.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx"
+          ],
+          "requires": [],
+          "sidecar_for": {}
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s-pt",
+      "version": "20260715-145245",
+      "tag": "yolo-precintos-s-pt-20260715-145245",
+      "release_id": "yolo-precintos-s-pt-20260715-145245",
+      "created_at": "2026-07-15T14:52:37Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "precintos-s.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "precintos-s.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx"
+          ],
+          "requires": [],
+          "sidecar_for": {}
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s-pt",
+      "version": "20260715-145215",
+      "tag": "yolo-precintos-s-pt-20260715-145215",
+      "release_id": "yolo-precintos-s-pt-20260715-145215",
+      "created_at": "2026-07-15T14:50:26Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "precintos-s.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "precintos-s.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx"
+          ],
+          "requires": [],
+          "sidecar_for": {}
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "lprocr-nv-lpr-s-v2-pt",
+      "version": "20260715-151156",
+      "tag": "lprocr-nv-lpr-s-v2-pt-20260715-151156",
+      "release_id": "lprocr-nv-lpr-s-v2-pt-20260715-151156",
+      "created_at": "2026-07-15T15:08:40Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "nv-lpr-s-v2_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "nv-lpr-s-v2.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "nv-lpr-s-v2.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "lprocr-nv-lpr-s-v2-pt",
+      "version": "20260715-124655",
+      "tag": "lprocr-nv-lpr-s-v2-pt-20260715-124655",
+      "release_id": "lprocr-nv-lpr-s-v2-pt-20260715-124655",
+      "created_at": "2026-07-15T11:43:39Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "nv-lpr-s-v2_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "nv-lpr-s-v2.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "nv-lpr-s-v2.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-precintos-s-snpe-qcs6490-fp32-dlc",
+      "version": "20260715-215719",
+      "tag": "yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719",
+      "release_id": "yolo-precintos-s-snpe-qcs6490-fp32-dlc-20260715-215719",
+      "created_at": "2026-07-15T15:31:07Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "meta6490",
+        "dlc6490"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "meta6490",
+          "role": "metadata",
+          "filename_plain": "precintos-s_snpe_qcs6490_fp32_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "dlc",
+          "v2_id": "dlc6490",
+          "role": "weights",
+          "filename_plain": "precintos-s_snpe_qcs6490_fp32.dlc",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "snpe-qcs6490",
+          "entrypoint": "dlc6490",
+          "members": [
+            "dlc6490",
+            "meta6490"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "meta6490": "dlc6490"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "yolo-barranqueras",
+      "version": "20260715-215903",
+      "tag": "yolo-barranqueras-20260715-215903",
+      "release_id": "yolo-barranqueras-20260715-215903",
+      "created_at": "2026-07-15T21:57:35Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "meta6490",
+        "meta8550",
+        "dlc6490",
+        "dlc8550",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "barranqueras_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "meta_snpe_qcs6490_fp32",
+          "v2_id": "meta6490",
+          "role": "metadata",
+          "filename_plain": "barranqueras.meta_snpe_qcs6490_fp32.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "meta_snpe_qcs8550_fp32",
+          "v2_id": "meta8550",
+          "role": "metadata",
+          "filename_plain": "barranqueras.meta_snpe_qcs8550_fp32.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "dlc_6490_fp32",
+          "v2_id": "dlc6490",
+          "role": "weights",
+          "filename_plain": "barranqueras.dlc_6490_fp32",
+          "encrypted": true
+        },
+        {
+          "v1_format": "dlc_8550_fp32",
+          "v2_id": "dlc8550",
+          "role": "weights",
+          "filename_plain": "barranqueras.dlc_8550_fp32",
+          "encrypted": true
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "barranqueras.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "barranqueras.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        },
+        {
+          "artifact_set": "snpe-qcs6490",
+          "entrypoint": "dlc6490",
+          "members": [
+            "dlc6490",
+            "meta6490"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "meta6490": "dlc6490"
+          }
+        },
+        {
+          "artifact_set": "snpe-qcs8550",
+          "entrypoint": "dlc8550",
+          "members": [
+            "dlc8550",
+            "meta8550"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "meta8550": "dlc8550"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    },
+    {
+      "model_id": "lprocr-nv-lpr-x-v2-pt",
+      "version": "20260720-112448",
+      "tag": "lprocr-nv-lpr-x-v2-pt-20260720-112448",
+      "release_id": "lprocr-nv-lpr-x-v2-pt-20260720-112448",
+      "created_at": "2026-07-15T22:00:04Z",
+      "status": "verify",
+      "reasons": [],
+      "pending_artifacts": [
+        "src_meta",
+        "pt",
+        "onnx"
+      ],
+      "artifacts": [
+        {
+          "v1_format": "meta",
+          "v2_id": "src_meta",
+          "role": "metadata",
+          "filename_plain": "nv-lpr-x-v2_meta.json",
+          "encrypted": false
+        },
+        {
+          "v1_format": "pt",
+          "v2_id": "pt",
+          "role": "source",
+          "filename_plain": "nv-lpr-x-v2.pt",
+          "encrypted": true
+        },
+        {
+          "v1_format": "onnx",
+          "v2_id": "onnx",
+          "role": "source",
+          "filename_plain": "nv-lpr-x-v2.onnx",
+          "encrypted": true
+        }
+      ],
+      "sets": [
+        {
+          "artifact_set": "source",
+          "entrypoint": "pt",
+          "members": [
+            "pt",
+            "onnx",
+            "src_meta"
+          ],
+          "requires": [],
+          "sidecar_for": {
+            "src_meta": "pt"
+          }
+        }
+      ],
+      "proposed_manifest": null
+    }
+  ]
+}
