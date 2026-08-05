@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "release_id": "patentes06-2026-11s",
+  "producer": "nv-exporter@2.43.2",
+  "created_at": "2026-08-04T12:00:00Z",
+  "lineage": {"job_id": "9649ac90-b0d2-4de6-b666-a13d03732fce", "source_release_id": null},
+  "artifacts": [
+    {"id": "ctx", "filename": "patentes06-2026-11s_qnn_htp_v68_int8_w8a16.bin", "role": "context", "size_bytes": 11018240, "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "transport": {"encrypted": false}, "compat": {"device": "qcs6490", "hexagon_arch": "v68", "qairt": "qnn-net-run-2.43.0.260127150333", "backend": "qnn_htp", "precision": "int8", "layout": "NHWC"}},
+    {"id": "meta", "filename": "patentes06-2026-11s_qnn_htp_v68_int8_w8a16_meta.json", "role": "metadata", "size_bytes": 741, "sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "transport": {"encrypted": false}, "compat": null},
+    {"id": "att", "filename": "attestation.json", "role": "attestation", "size_bytes": 884, "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "transport": {"encrypted": false}, "compat": null}
+  ],
+  "sets": [
+    {"artifact_set": "qnn-htp-v68", "entrypoint": "ctx", "members": ["ctx", "meta", "att"], "requires": [], "sidecar_for": {"meta": "ctx", "att": "ctx"}}
+  ],
+  "signatures": []
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "release_id": "lprocr-m-v2-20260715",
+  "producer": "ai-ocr-2026@1.0.0",
+  "created_at": "2026-07-15T11:43:32Z",
+  "artifacts": [
+    {"id": "pt", "filename": "nv-lpr-m-v2.pt", "role": "source", "size_bytes": 5000, "sha256": "8888888888888888888888888888888888888888888888888888888888888888", "transport": {"encrypted": true, "sha256_enc": "9999999999999999999999999999999999999999999999999999999999999999"}, "compat": null},
+    {"id": "meta", "filename": "nv-lpr-m-v2_meta.json", "role": "metadata", "size_bytes": 80, "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "transport": {"encrypted": false}, "compat": null}
+  ],
+  "sets": [
+    {"artifact_set": "source", "entrypoint": "pt", "members": ["pt", "meta"], "sidecar_for": {"meta": "pt"}}
+  ]
+}

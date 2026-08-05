@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "release_id": "precintos-s-20260804",
+  "producer": "nv-exporter@2.43.2",
+  "created_at": "2026-08-04T12:00:00Z",
+  "lineage": {"job_id": null, "source_release_id": null},
+  "artifacts": [
+    {"id": "pt", "filename": "precintos-s.pt", "role": "source", "size_bytes": 1000, "sha256": "1111111111111111111111111111111111111111111111111111111111111111", "transport": {"encrypted": false}, "compat": null},
+    {"id": "onnx", "filename": "precintos-s.onnx", "role": "source", "size_bytes": 1100, "sha256": "2222222222222222222222222222222222222222222222222222222222222222", "transport": {"encrypted": false}, "compat": null},
+    {"id": "src_meta", "filename": "precintos-s_meta.json", "role": "metadata", "size_bytes": 60, "sha256": "3333333333333333333333333333333333333333333333333333333333333333", "transport": {"encrypted": false}, "compat": null},
+    {"id": "dlc6490", "filename": "precintos-s_snpe_qcs6490_fp32.dlc", "role": "weights", "size_bytes": 2000, "sha256": "4444444444444444444444444444444444444444444444444444444444444444", "transport": {"encrypted": false}, "compat": {"device": "qcs6490", "hexagon_arch": null, "qairt": null, "backend": "snpe_adreno", "precision": "fp32", "layout": null}},
+    {"id": "meta6490", "filename": "precintos-s_snpe_qcs6490_fp32_meta.json", "role": "metadata", "size_bytes": 62, "sha256": "5555555555555555555555555555555555555555555555555555555555555555", "transport": {"encrypted": false}, "compat": null},
+    {"id": "dlc8550", "filename": "precintos-s_snpe_qcs8550_fp32.dlc", "role": "weights", "size_bytes": 2100, "sha256": "6666666666666666666666666666666666666666666666666666666666666666", "transport": {"encrypted": false}, "compat": {"device": "qcs8550", "hexagon_arch": null, "qairt": null, "backend": "snpe_adreno", "precision": "fp32", "layout": null}},
+    {"id": "meta8550", "filename": "precintos-s_snpe_qcs8550_fp32_meta.json", "role": "metadata", "size_bytes": 63, "sha256": "7777777777777777777777777777777777777777777777777777777777777777", "transport": {"encrypted": false}, "compat": null}
+  ],
+  "sets": [
+    {"artifact_set": "source", "entrypoint": "pt", "members": ["pt", "onnx", "src_meta"], "requires": [], "sidecar_for": {"src_meta": "pt"}},
+    {"artifact_set": "snpe-qcs6490", "entrypoint": "dlc6490", "members": ["dlc6490", "meta6490"], "requires": [], "sidecar_for": {"meta6490": "dlc6490"}},
+    {"artifact_set": "snpe-qcs8550", "entrypoint": "dlc8550", "members": ["dlc8550", "meta8550"], "requires": [], "sidecar_for": {"meta8550": "dlc8550"}}
+  ],
+  "signatures": []
+}

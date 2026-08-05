@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "release_id": "x-20260804",
+  "producer": "p",
+  "created_at": "2026-08-04T12:00:00Z",
+  "artifacts": [
+    {"id": "ctx", "filename": "m_qnn_htp_v73_fp32.bin", "role": "context", "size_bytes": 10, "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "transport": {"encrypted": false}, "compat": {"device": "qcs8550", "hexagon_arch": "v73", "qairt": "2.41", "backend": "qnn_htp", "precision": "fp32", "layout": "NHWC"}}
+  ],
+  "sets": [
+    {"artifact_set": "s", "entrypoint": "nope", "members": ["ctx"]}
+  ]
+}
