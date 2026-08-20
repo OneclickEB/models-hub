@@ -3,10 +3,11 @@
   "release_id": "barranqueras-20260804",
   "producer": "nv-exporter@2.43.2",
   "created_at": "2026-08-04T12:00:00Z",
+  "model": {"model_id": "yolo-barranqueras", "model_family": "ultralytics", "model_type": "yolo_detect", "task": "detect", "source_format": "pytorch_pt", "model_created_at": "2026-08-04T10:00:00Z"},
   "lineage": {"job_id": "11111111-1111-1111-1111-111111111111", "source_release_id": null},
   "artifacts": [
-    {"id": "ctx", "filename": "barranqueras_qnn_htp_v73_fp32.bin", "role": "context", "size_bytes": 100, "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "transport": {"encrypted": false}, "compat": {"device": "qcs8550", "hexagon_arch": "v73", "qairt": "2.41.0.251128145156", "backend": "qnn_htp", "precision": "fp32", "layout": "NHWC"}},
-    {"id": "meta", "filename": "barranqueras_qnn_htp_v73_fp32_meta.json", "role": "metadata", "size_bytes": 50, "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "transport": {"encrypted": false}, "compat": null},
+    {"id": "ctx", "filename": "barranqueras_qnn_htp_v73_fp32.bin", "role": "context", "artifact_format": "qnn_context_bin", "runtime_family": "qnn_net_run_worker", "target_technical": "qnn_htp_v73", "qnn_htp_arch": "v73", "soc_hint": "qcs8550", "exported_at": "2026-08-04T12:00:00Z", "size_bytes": 100, "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "transport": {"encrypted": false}, "compat": {"device": "qcs8550", "hexagon_arch": "v73", "qairt": "2.41.0.251128145156", "backend": "qnn_htp", "precision": "fp32", "layout": "NHWC"}},
+    {"id": "meta", "filename": "barranqueras_qnn_htp_v73_fp32_meta.json", "role": "metadata", "metadata_created_at": "2026-08-04T12:00:00Z", "size_bytes": 50, "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "transport": {"encrypted": false}, "compat": null},
     {"id": "att", "filename": "attestation.json", "role": "attestation", "size_bytes": 40, "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "transport": {"encrypted": false}, "compat": null}
   ],
   "sets": [

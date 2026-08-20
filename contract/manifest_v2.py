@@ -48,12 +48,22 @@ COMPAT_REQUIRED_ROLES = {"weights", "context"}
 
 _TOP_KEYS = {
     "schema_version", "release_id", "producer", "created_at",
-    "lineage", "artifacts", "sets", "signatures",
+    "lineage", "model", "artifacts", "sets", "signatures",
 }
 _REQUIRED_TOP_KEYS = {
     "schema_version", "release_id", "producer", "created_at", "artifacts", "sets",
 }
-_ARTIFACT_KEYS = {"id", "filename", "role", "size_bytes", "sha256", "transport", "compat"}
+_MODEL_KEYS = {
+    "model_id", "model_family", "model_type", "task", "source_format",
+    "model_created_at", "metadata_created_at", "metadata_updated_at",
+}
+_MODEL_REQUIRED_KEYS = {"model_family", "model_type", "task"}
+_ARTIFACT_KEYS = {
+    "id", "filename", "role", "size_bytes", "sha256", "transport", "compat",
+    "artifact_format", "runtime_family", "target_technical", "qnn_htp_arch",
+    "soc_hint", "model_created_at", "exported_at", "metadata_created_at",
+    "metadata_updated_at",
+}
 _REQUIRED_ARTIFACT_KEYS = {"id", "filename", "role", "size_bytes", "sha256"}
 _SET_KEYS = {"artifact_set", "entrypoint", "members", "requires", "sidecar_for"}
 _REQUIRED_SET_KEYS = {"artifact_set", "entrypoint", "members"}
@@ -61,6 +71,15 @@ _LINEAGE_KEYS = {"job_id", "source_release_id"}
 _TRANSPORT_KEYS = {"encrypted", "sha256_enc"}
 _COMPAT_KEYS = {"device", "hexagon_arch", "qairt", "backend", "precision", "layout"}
 _COMPAT_REQUIRED_KEYS = {"device", "backend", "precision"}
+_TASKS = {"detect", "ocr", "pose", "segment", "depth"}
+_RUNTIME_ARTIFACT_ROLES = {"source", "weights", "context"}
+_KNOWN_ARTIFACT_FORMATS = {
+    "pytorch_pt": ("source", "pytorch"),
+    "onnx": ("source", "onnxruntime"),
+    "snpe_dlc": ("weights", "snpe"),
+    "qnn_context_bin": ("context", "qnn_net_run_worker"),
+    "onnx_qnn_context": ("context", "onnxruntime_qnn"),
+}
 
 _SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 _SAFE_RELEASE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
@@ -89,6 +108,42 @@ def _require(condition: bool, message: str) -> None:
 def _require_known_keys(obj: dict[str, Any], allowed: set[str], label: str) -> None:
     unknown = set(obj) - allowed
     _require(not unknown, f"{label}: claves desconocidas {sorted(unknown)}")
+
+
+def _require_iso_timestamp(value: Any, label: str) -> None:
+    _require(
+        isinstance(value, str) and bool(_ISO8601.match(value)),
+        f"{label} debe ser timestamp ISO-8601",
+    )
+
+
+def _require_optional_safe_string(obj: dict[str, Any], key: str, label: str) -> None:
+    if key not in obj:
+        return
+    value = obj[key]
+    _require(
+        isinstance(value, str) and bool(_SAFE_ID.fullmatch(value)),
+        f"{label}.{key} debe ser string seguro no vacio",
+    )
+
+
+def _validate_model(model: Any) -> None:
+    _require(isinstance(model, dict), "manifest.model debe ser objeto")
+    _require_known_keys(model, _MODEL_KEYS, "manifest.model")
+    missing = _MODEL_REQUIRED_KEYS - set(model)
+    _require(not missing, f"manifest.model: faltan {sorted(missing)}")
+    for key in ("model_family", "model_type", "source_format"):
+        _require_optional_safe_string(model, key, "manifest.model")
+    if "model_id" in model:
+        _require(
+            isinstance(model["model_id"], str) and bool(_SAFE_RELEASE_ID.fullmatch(model["model_id"])),
+            "manifest.model.model_id invalido",
+        )
+    task = model["task"]
+    _require(task in _TASKS, f"manifest.model.task invalido {task!r}")
+    for key in ("model_created_at", "metadata_created_at", "metadata_updated_at"):
+        if key in model:
+            _require_iso_timestamp(model[key], f"manifest.model.{key}")
 
 
 def _validate_compat(compat: Any, artifact_id: str) -> None:
@@ -164,6 +219,37 @@ def _validate_artifact(artifact: Any) -> dict[str, Any]:
             compat is None,
             f"artifact {artifact_id}: role {role} no admite compat (debe ser null/ausente)",
         )
+
+    has_artifact_format = "artifact_format" in artifact
+    has_runtime_family = "runtime_family" in artifact
+    if role in _RUNTIME_ARTIFACT_ROLES:
+        _require(
+            has_artifact_format == has_runtime_family,
+            f"artifact {artifact_id}: artifact_format y runtime_family deben declararse juntos",
+        )
+    for key in ("artifact_format", "runtime_family", "target_technical", "qnn_htp_arch", "soc_hint"):
+        _require_optional_safe_string(artifact, key, f"artifact {artifact_id}")
+    if "qnn_htp_arch" in artifact:
+        qnn_htp_arch = artifact["qnn_htp_arch"]
+        _require(
+            qnn_htp_arch.startswith("v") and qnn_htp_arch[1:].isdigit(),
+            f"artifact {artifact_id}: qnn_htp_arch invalido",
+        )
+    artifact_format = artifact.get("artifact_format")
+    runtime_family = artifact.get("runtime_family")
+    if artifact_format in _KNOWN_ARTIFACT_FORMATS:
+        expected_role, expected_runtime = _KNOWN_ARTIFACT_FORMATS[artifact_format]
+        _require(
+            role == expected_role,
+            f"artifact {artifact_id}: artifact_format {artifact_format!r} requiere role {expected_role!r}",
+        )
+        _require(
+            runtime_family == expected_runtime,
+            f"artifact {artifact_id}: artifact_format {artifact_format!r} requiere runtime_family {expected_runtime!r}",
+        )
+    for key in ("model_created_at", "exported_at", "metadata_created_at", "metadata_updated_at"):
+        if key in artifact:
+            _require_iso_timestamp(artifact[key], f"artifact {artifact_id}.{key}")
     return artifact
 
 
@@ -203,6 +289,15 @@ def _validate_set(
         _require(sidecar in members, f"set {set_id}: sidecar {sidecar!r} no esta en members")
         _require(principal in members, f"set {set_id}: principal {principal!r} no esta en members")
         _require(sidecar != principal, f"set {set_id}: sidecar_for no puede apuntarse a si mismo")
+    metadata_without_sidecar = [
+        member
+        for member in members
+        if artifacts_by_id[member].get("role") == "metadata" and member not in sidecar_for
+    ]
+    _require(
+        not metadata_without_sidecar,
+        f"set {set_id}: metadata sin sidecar_for {metadata_without_sidecar}",
+    )
 
     # Coherencia target: un set no mezcla devices ni arquitecturas Hexagon.
     devices = set()
@@ -240,6 +335,9 @@ def validate_manifest_document(manifest: Any) -> dict[str, Any]:
         isinstance(manifest["created_at"], str) and bool(_ISO8601.match(manifest["created_at"])),
         "manifest: created_at debe ser timestamp ISO-8601",
     )
+
+    if "model" in manifest:
+        _validate_model(manifest["model"])
 
     lineage = manifest.get("lineage", {})
     _require(isinstance(lineage, dict), "manifest: lineage debe ser objeto")

@@ -11,6 +11,21 @@
     "release_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
     "producer": {"type": "string", "minLength": 1},
     "created_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}"},
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model_family", "model_type", "task"],
+      "properties": {
+        "model_id": {"$ref": "#/$defs/safe_id"},
+        "model_family": {"$ref": "#/$defs/safe_id"},
+        "model_type": {"$ref": "#/$defs/safe_id"},
+        "task": {"enum": ["detect", "ocr", "pose", "segment", "depth"]},
+        "source_format": {"$ref": "#/$defs/safe_id"},
+        "model_created_at": {"$ref": "#/$defs/timestamp"},
+        "metadata_created_at": {"$ref": "#/$defs/timestamp"},
+        "metadata_updated_at": {"$ref": "#/$defs/timestamp"}
+      }
+    },
     "lineage": {
       "type": "object",
       "additionalProperties": false,
@@ -37,6 +52,7 @@
   },
   "$defs": {
     "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "timestamp": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}"},
     "safe_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
     "artifact": {
       "type": "object",
@@ -56,6 +72,15 @@
             "sha256_enc": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]}
           }
         },
+        "artifact_format": {"$ref": "#/$defs/safe_id"},
+        "runtime_family": {"$ref": "#/$defs/safe_id"},
+        "target_technical": {"$ref": "#/$defs/safe_id"},
+        "qnn_htp_arch": {"type": "string", "pattern": "^v\\d+$"},
+        "soc_hint": {"$ref": "#/$defs/safe_id"},
+        "model_created_at": {"$ref": "#/$defs/timestamp"},
+        "exported_at": {"$ref": "#/$defs/timestamp"},
+        "metadata_created_at": {"$ref": "#/$defs/timestamp"},
+        "metadata_updated_at": {"$ref": "#/$defs/timestamp"},
         "compat": {
           "anyOf": [
             {"type": "null"},
