@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-08-20T17:21:49Z",
+  "updated_at": "2026-08-20T22:48:52Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -1733,6 +1733,151 @@
             "sha256_plain": "c759ce7a877cef28bc916e4cf9dbd7233dcb2af2d46b6617f71ecac5454cc64e",
             "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-x-v2-pt-20260720-112448/manifest.json",
             "release_id": "lprocr-nv-lpr-x-v2-pt-20260720-112448"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "yolo-test-fix-verification-precintos-s",
+      "family": "yolo",
+      "size": "s",
+      "tags": [
+        "test-verificacion"
+      ],
+      "version_scheme": null,
+      "display_name": "TEST-fix-verification-precintos-s",
+      "versions": [
+        {
+          "version": "20260820-224805",
+          "description": "Prueba de verificacion del fix model_family (borrar despues)",
+          "released_at": "2026-08-20T17:21:50Z",
+          "size": "s",
+          "tags": [
+            "test-verificacion"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-test-fix-verification-precintos-s/20260820-224805.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "filename": "precintos-s.onnx.enc",
+              "size_bytes": 37889600,
+              "encrypted": true,
+              "sha256_plain": "772b70a10dcca70cd262ece231866f79955364ec403ee6b0022863539708bc9e",
+              "sha256_enc": "c8ced7caab5c3e13ecae6af6d0cb50e351fa50e844773332f00a04b47d143fd1",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "precintos-s_meta.json",
+              "size_bytes": 704,
+              "encrypted": false,
+              "sha256_plain": "d6109a280dc8039856fe4e1e6669a6e1127456eaab8dd0cd977f3f71f9241117",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_meta.json",
+              "artifact_id": "meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "precintos-s_labels.txt",
+              "size_bytes": 14,
+              "encrypted": false,
+              "sha256_plain": "bf356fb380c6bdff26ccc09fb5519f70571fb1d94339ab2b24ce66557e6cedde",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_labels.txt",
+              "artifact_id": "labels",
+              "role": "labels",
+              "format": "txt"
+            },
+            {
+              "filename": "precintos-s_export_report.json",
+              "size_bytes": 448,
+              "encrypted": false,
+              "sha256_plain": "b5d847c2d6c0c8d19085a8f8fa4a3d7424e426025eb63c3c1a23c58b789d651b",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_export_report.json",
+              "artifact_id": "report",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "precintos-s.pt.enc",
+              "size_bytes": 19341452,
+              "encrypted": true,
+              "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
+              "sha256_enc": "da6bd831f325b5183c6ea4b90080747c1db4964181e3228e035190f667898c75",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source",
+              "format": "pt"
+            },
+            {
+              "filename": "precintos-s-j2.onnx.enc",
+              "size_bytes": 37929852,
+              "encrypted": true,
+              "sha256_plain": "fceeaa48d42f190da146b0c0866e29c09e3d58db4876c9ad021882ef3e78c93c",
+              "sha256_enc": "b1297e1d86467d3fb6ecda1609509a54f613858972b5296c15557fb00a862d45",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s-j2.onnx.enc",
+              "artifact_id": "onnx-j2",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "precintos-s_meta-j2.json",
+              "size_bytes": 714,
+              "encrypted": false,
+              "sha256_plain": "60ac3f0b478f02bf595a973599be49bd0d8034d628ae96b1799ab11182bc2fb6",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_meta-j2.json",
+              "artifact_id": "source-meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "precintos-s_export_report-j2.json",
+              "size_bytes": 1305,
+              "encrypted": false,
+              "sha256_plain": "f68579e629cba41b207dae9bf4075c09baf9be58ac7f56963a4bab7be72530b2",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_export_report-j2.json",
+              "artifact_id": "report-j2",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "precintos-s_snpe_qcs6490_fp32.dlc.enc",
+              "size_bytes": 38116950,
+              "encrypted": true,
+              "sha256_plain": "fb58e3b3f3f38750d160a3f3b25fc1a78e1a986cb12e3ac81f9e63d7fa24a716",
+              "sha256_enc": "dfe1042e2638913ddefdb5ed8e2942a45c068e4a5395befd54487b529013c21f",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_snpe_qcs6490_fp32.dlc.enc",
+              "artifact_id": "dlc-qcs6490",
+              "role": "weights",
+              "target": "qcs6490",
+              "format": "dlc"
+            },
+            {
+              "filename": "precintos-s_snpe_qcs6490_fp32_meta.json",
+              "size_bytes": 814,
+              "encrypted": false,
+              "sha256_plain": "c5dc81ca989530ead54072da9901389fa594faf7aa88f4f3c98b2a309d353d14",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/precintos-s_snpe_qcs6490_fp32_meta.json",
+              "artifact_id": "meta-qcs6490",
+              "role": "metadata",
+              "format": "meta"
+            }
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "612a6d320aeba581f3c49912ad03e7e24c3a8d992c15b2f9502956c4cb3325de",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-test-fix-verification-precintos-s-20260820-224805/manifest.json",
+            "release_id": "yolo-test-fix-verification-precintos-s-20260820-224805"
           }
         }
       ]
