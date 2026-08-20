@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-07-21T17:08:27Z",
+  "updated_at": "2026-08-20T14:30:58Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -388,11 +388,111 @@
       "family": "yolo",
       "size": "",
       "tags": [
-        "precinto"
+        "precintos"
       ],
       "version_scheme": null,
       "display_name": "precintos-s.pt",
       "versions": [
+        {
+          "version": "20260820-143000",
+          "description": "",
+          "released_at": "2026-08-20T13:52:35Z",
+          "size": "",
+          "tags": [
+            "precintos"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-precintos-s-pt/20260820-143000.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "filename": "precintos-s.pt.enc",
+              "size_bytes": 19341452,
+              "encrypted": true,
+              "sha256_plain": "bf41d09c3a6a8eff53feb6b178858f6df19de6df1adfee6b1d5b1b0175e7f72f",
+              "sha256_enc": "b545d31dfb6e8da2c0dd4923712037a9d13d46faa507fb01faa87a7c999fe568",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s.pt.enc",
+              "artifact_id": "pt",
+              "role": "source",
+              "format": "pt"
+            },
+            {
+              "filename": "precintos-s.onnx.enc",
+              "size_bytes": 37889600,
+              "encrypted": true,
+              "sha256_plain": "b6e2195d8c5fa384be16e670eb618434e91af4e08aabe6a0a1ab3493451bd585",
+              "sha256_enc": "ad59b76315a265849db0a608a52f6f80c4b65b1048ec1b4122b78dbfa5645d1c",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "precintos-s_meta.json",
+              "size_bytes": 681,
+              "encrypted": false,
+              "sha256_plain": "8df8cc24beb001aabdaa3ec2cde50f5644f58e2f04327636458b2a853cea0199",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s_meta.json",
+              "artifact_id": "source-meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "precintos-s_labels.txt",
+              "size_bytes": 14,
+              "encrypted": false,
+              "sha256_plain": "bf356fb380c6bdff26ccc09fb5519f70571fb1d94339ab2b24ce66557e6cedde",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s_labels.txt",
+              "artifact_id": "labels",
+              "role": "labels",
+              "format": "txt"
+            },
+            {
+              "filename": "precintos-s_export_report.json",
+              "size_bytes": 1346,
+              "encrypted": false,
+              "sha256_plain": "326b76acd52612ce78c063fa2f4f3b055e132c8ed710cbace1cec754d744ca69",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s_export_report.json",
+              "artifact_id": "report",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "precintos-s_snpe_qcs8550_fp16.dlc.enc",
+              "size_bytes": 19204806,
+              "encrypted": true,
+              "sha256_plain": "4c47e6abe74e19fb0c93e06c3aee6e64a8bcc78751f9d5a5de84fe83c619110f",
+              "sha256_enc": "a669bd68d7b8428e2581ff70224993dbda3c4560d1294b168d39776d2a870f23",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s_snpe_qcs8550_fp16.dlc.enc",
+              "artifact_id": "dlc-qcs8550",
+              "role": "weights",
+              "target": "qcs8550",
+              "format": "dlc"
+            },
+            {
+              "filename": "precintos-s_snpe_qcs8550_fp16_meta.json",
+              "size_bytes": 781,
+              "encrypted": false,
+              "sha256_plain": "aabc0e26ba31f08eed609555431fc236fb561fbd7024b123cf4ef258498c51ac",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/precintos-s_snpe_qcs8550_fp16_meta.json",
+              "artifact_id": "meta-qcs8550",
+              "role": "metadata",
+              "format": "meta"
+            }
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "d2072566ba986ff32de1a5d372be458e10645afc840cec0c77573068cecda6f3",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-precintos-s-pt-20260820-143000/manifest.json",
+            "release_id": "precintos-s-20260820-142406"
+          }
+        },
         {
           "version": "20260721-170738",
           "description": "precintos",
