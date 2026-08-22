@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-08-21T20:06:41Z",
+  "updated_at": "2026-08-22T13:59:17Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -2393,6 +2393,277 @@
             "sha256_plain": "5547f504cc53faf3ca319c21d38dc46853f4cd88decb0448f1366e54843ac1fa",
             "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pt-20260821-200031/manifest.json",
             "release_id": "yolo-yolo26s-pt-20260821-200031"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "yolo-yolo26s-seg-pt",
+      "family": "yolo",
+      "size": "s",
+      "tags": [
+        "segmentacion",
+        "coco"
+      ],
+      "version_scheme": null,
+      "display_name": "yolo26s-seg.pt",
+      "versions": [
+        {
+          "version": "20260822-135801",
+          "description": "",
+          "released_at": "2026-08-21T20:06:42Z",
+          "size": "s",
+          "tags": [
+            "segmentacion",
+            "coco"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-yolo26s-seg-pt/20260822-135801.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "filename": "yolo26s-seg.onnx.enc",
+              "size_bytes": 41857427,
+              "encrypted": true,
+              "sha256_plain": "cd68d67db7f0a51e2c82a6e7f539d5465138563809f919299ea23f1f3f41a050",
+              "sha256_enc": "4b51219275bbee859358d49da6edfbea93121597e96e94a12d51f57602cba5f4",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "yolo26s-seg_meta.json",
+              "size_bytes": 3468,
+              "encrypted": false,
+              "sha256_plain": "9d4bd31c724e99887b3e5222b2d8b8d7b3e0ff9e8679ffd46927efbfb331bac7",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_meta.json",
+              "artifact_id": "meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg_labels.txt",
+              "size_bytes": 621,
+              "encrypted": false,
+              "sha256_plain": "bd17f1ee35d5f3c862a4894605855abbb9dda4b0621fdb0ac4c2c8c7bb7e730a",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_labels.txt",
+              "artifact_id": "labels",
+              "role": "labels",
+              "format": "txt"
+            },
+            {
+              "filename": "yolo26s-seg_export_report.json",
+              "size_bytes": 447,
+              "encrypted": false,
+              "sha256_plain": "c28918245914aea01968477791e0c8c750eb0121bc67103bb53d82d88ce1ea38",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_export_report.json",
+              "artifact_id": "report",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "yolo26s-seg.pt.enc",
+              "size_bytes": 23467983,
+              "encrypted": true,
+              "sha256_plain": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4",
+              "sha256_enc": "82b5f18bb323dd0c7f2a1c1dc3ac31543cb05c15d95cacf88b2a1deaeee2b0cc",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg.pt.enc",
+              "artifact_id": "pt",
+              "role": "source",
+              "format": "pt"
+            },
+            {
+              "filename": "yolo26s-seg-j2.onnx.enc",
+              "size_bytes": 41912520,
+              "encrypted": true,
+              "sha256_plain": "ef83b0cb4a227a8100d9b3256f4255bc23dc5b26ae914b8b3f7dea1b956fea06",
+              "sha256_enc": "ded6d2a29b3f07bfbd65711e682ac6940cea3f625a941ec792077de112d5a5fd",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg-j2.onnx.enc",
+              "artifact_id": "onnx-j2",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "yolo26s-seg_meta-j2.json",
+              "size_bytes": 3478,
+              "encrypted": false,
+              "sha256_plain": "37be41d7190bc53249187a2d4be241f45be397d5992204b853ccd077826b295d",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_meta-j2.json",
+              "artifact_id": "source-meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg_export_report-j2.json",
+              "size_bytes": 1301,
+              "encrypted": false,
+              "sha256_plain": "b726e472045aa96e6b64a198ddbf0155f81ec68effc325fb15b5710dbb6c9f0c",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_export_report-j2.json",
+              "artifact_id": "report-j2",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "yolo26s-seg_snpe_qcs6490_fp32.dlc.enc",
+              "size_bytes": 42170822,
+              "encrypted": true,
+              "sha256_plain": "49da8b42edfb78872c4a26b74462a7f1f225e1d3b7bf19cd9b4c5f564c988425",
+              "sha256_enc": "904865529f4db61dc863fbfeca481ace7ea3457ba3229a450017b3b598526e0c",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_snpe_qcs6490_fp32.dlc.enc",
+              "artifact_id": "dlc-qcs6490",
+              "role": "weights",
+              "target": "qcs6490",
+              "format": "dlc_qcs6490"
+            },
+            {
+              "filename": "yolo26s-seg_snpe_qcs6490_fp32_meta.json",
+              "size_bytes": 3578,
+              "encrypted": false,
+              "sha256_plain": "8ffa6254b10e1794ca19f0aff97b9f17dc2c86dddc6f74d2d705f6f69b5e559a",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_snpe_qcs6490_fp32_meta.json",
+              "artifact_id": "meta-qcs6490",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg-j3.onnx.enc",
+              "size_bytes": 41857427,
+              "encrypted": true,
+              "sha256_plain": "ae81febba44056dbc2e4f4212e4ee5ebeb3aef500cb421e1dc3b91b58c702483",
+              "sha256_enc": "f2591583579b06f0e483cd1c86f7bb880b33b75657a3064e9f22f602aaeebe02",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg-j3.onnx.enc",
+              "artifact_id": "onnx-j3",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "yolo26s-seg_meta-j3.json",
+              "size_bytes": 3478,
+              "encrypted": false,
+              "sha256_plain": "58f0634891daad0f294995a4417769c1357cdb458798a369310c3a3ffddc7358",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_meta-j3.json",
+              "artifact_id": "source-meta-j3",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg_export_report-j3.json",
+              "size_bytes": 1344,
+              "encrypted": false,
+              "sha256_plain": "466428fe06c3be674c815951a6b99e964a4541e9736404e7c147b4aea7149c81",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_export_report-j3.json",
+              "artifact_id": "report-j3",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "yolo26s-seg_snpe_qcs8550_fp16.dlc.enc",
+              "size_bytes": 21293342,
+              "encrypted": true,
+              "sha256_plain": "974440150d5bb9c19009fd42895538b30f0b8741c2b7c4dbfcf478989d5b92df",
+              "sha256_enc": "129e23da307835bcac009f291b5e492c8a7cf4d89a1e2f4539be576acddd1926",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_snpe_qcs8550_fp16.dlc.enc",
+              "artifact_id": "dlc-qcs8550",
+              "role": "weights",
+              "target": "qcs8550",
+              "format": "dlc_qcs8550"
+            },
+            {
+              "filename": "yolo26s-seg_snpe_qcs8550_fp16_meta.json",
+              "size_bytes": 3578,
+              "encrypted": false,
+              "sha256_plain": "6ee43bf1b782c1deab8b1fd2ee39829a58d4b4b4aca177152338058f7d6f07cd",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_snpe_qcs8550_fp16_meta.json",
+              "artifact_id": "meta-qcs8550",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg_ort_qnn_htp_v73_int8.onnx.enc",
+              "size_bytes": 11917295,
+              "encrypted": true,
+              "sha256_plain": "40771306148386f6f4c0971396ce478558af77763e5ad19027292150f42b54c7",
+              "sha256_enc": "6cb58e7201089776d79d87ccf7642c531bd69ff2c74ce244ce9207748d39e067",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_ort_qnn_htp_v73_int8.onnx.enc",
+              "artifact_id": "ctx",
+              "role": "context",
+              "target": "qcs8550",
+              "format": "onnx_qcs8550"
+            },
+            {
+              "filename": "yolo26s-seg_ort_qnn_htp_v73_int8_meta.json",
+              "size_bytes": 3893,
+              "encrypted": false,
+              "sha256_plain": "d8a90c2bc4d3787ae9c3e38ec02e536dfd336dae4cc35cd6c09481e685a8e807",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_ort_qnn_htp_v73_int8_meta.json",
+              "artifact_id": "meta-j4",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg_ort_qnn_htp_v73_int8_export_report.json",
+              "size_bytes": 1316,
+              "encrypted": false,
+              "sha256_plain": "e027fc87c18cb46484dd5bb89ecd93c557a0745da6741217ba8451f98a8f7178",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_ort_qnn_htp_v73_int8_export_report.json",
+              "artifact_id": "report-j4",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "yolo26s-seg_ort_qnn_htp_v68_int8.onnx.enc",
+              "size_bytes": 12212205,
+              "encrypted": true,
+              "sha256_plain": "ba79f5272e2b2d6dc8b9a58e67a02e6c535d7ef829fdffe5c4c0c7a00f1a65aa",
+              "sha256_enc": "f2162c7e68d286a5b2d9393507b7f273cae35f8356288d1a263e75ce1513716f",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_ort_qnn_htp_v68_int8.onnx.enc",
+              "artifact_id": "ctx-j5",
+              "role": "context",
+              "target": "qcs6490",
+              "format": "onnx_qcs6490"
+            },
+            {
+              "filename": "yolo26s-seg_ort_qnn_htp_v68_int8_meta.json",
+              "size_bytes": 3893,
+              "encrypted": false,
+              "sha256_plain": "4364be36e34050c7de459e403e46ffe38e6b3b86014941dc9403deb40ff7ff20",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_ort_qnn_htp_v68_int8_meta.json",
+              "artifact_id": "meta-j5",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-seg_ort_qnn_htp_v68_int8_export_report.json",
+              "size_bytes": 1316,
+              "encrypted": false,
+              "sha256_plain": "d5b8aab49840ad293bae120033cb734c5f0f40a99d857ff3e1ed28c1984a1102",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/yolo26s-seg_ort_qnn_htp_v68_int8_export_report.json",
+              "artifact_id": "report-j5",
+              "role": "report",
+              "format": "json"
+            }
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "630692d0d1dcf28ebba05c4ae31dd61dff7c9fd9337c65279b91b44160693ac0",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/manifest.json",
+            "release_id": "yolo-yolo26s-seg-pt-20260822-135801"
           }
         }
       ]
