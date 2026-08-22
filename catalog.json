@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-08-22T13:59:17Z",
+  "updated_at": "2026-08-22T14:06:26Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -2664,6 +2664,70 @@
             "sha256_plain": "630692d0d1dcf28ebba05c4ae31dd61dff7c9fd9337c65279b91b44160693ac0",
             "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-seg-pt-20260822-135801/manifest.json",
             "release_id": "yolo-yolo26s-seg-pt-20260822-135801"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "yolov8-test-publish",
+      "family": "yolov8",
+      "size": "s",
+      "tags": [],
+      "version_scheme": null,
+      "display_name": "Test Publish",
+      "versions": [
+        {
+          "version": "20260822-140618",
+          "description": "test",
+          "released_at": "2026-08-22T13:59:18Z",
+          "size": "s",
+          "tags": [],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolov8-test-publish/20260822-140618.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "filename": "yolo26s_ort_qnn_htp_v73_int8.onnx.enc",
+              "size_bytes": 10869105,
+              "encrypted": true,
+              "sha256_plain": "cf5b6be42f5b33235098732ee4fd231f6c23eaef9930c67cec2dbd6db481aae5",
+              "sha256_enc": "a7d406c9eb5e8f2721584a13016806eaf430ce8686109c18e6bf29a1f1f7b36a",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolov8-test-publish-20260822-140618/yolo26s_ort_qnn_htp_v73_int8.onnx.enc",
+              "artifact_id": "ctx",
+              "role": "context",
+              "target": "qcs8550",
+              "format": "onnx"
+            },
+            {
+              "filename": "yolo26s_ort_qnn_htp_v73_int8_meta.json",
+              "size_bytes": 3883,
+              "encrypted": false,
+              "sha256_plain": "bc9cc58e3e3431bed9e5a7330f93de59e77daa5ac580c6b7c76f84770625ff0f",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolov8-test-publish-20260822-140618/yolo26s_ort_qnn_htp_v73_int8_meta.json",
+              "artifact_id": "meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s_ort_qnn_htp_v73_int8_export_report.json",
+              "size_bytes": 1301,
+              "encrypted": false,
+              "sha256_plain": "56570a6da75ed528ff19bd0410c340830a7cb878daf9e0ac0f61ce33784fa066",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolov8-test-publish-20260822-140618/yolo26s_ort_qnn_htp_v73_int8_export_report.json",
+              "artifact_id": "report",
+              "role": "report",
+              "format": "json"
+            }
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "086602a24c31283a01e8de9ceba6da608bffae7d5e6c29ac4f0902c1e3f7f3bc",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolov8-test-publish-20260822-140618/manifest.json",
+            "release_id": "yolov8-test-publish-20260822-140618"
           }
         }
       ]
