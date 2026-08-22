@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-08-22T14:30:30Z",
+  "updated_at": "2026-08-22T16:07:12Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -3088,6 +3088,86 @@
             "sha256_plain": "086602a24c31283a01e8de9ceba6da608bffae7d5e6c29ac4f0902c1e3f7f3bc",
             "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolov8-test-publish-20260822-140618/manifest.json",
             "release_id": "yolov8-test-publish-20260822-140618"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "yolo-yolo26s-pose-pt",
+      "family": "yolo",
+      "size": "s",
+      "tags": [
+        "pose",
+        "coco"
+      ],
+      "version_scheme": null,
+      "display_name": "yolo26s-pose.pt",
+      "versions": [
+        {
+          "version": "20260822-160641",
+          "description": "",
+          "released_at": "2026-08-22T14:30:31Z",
+          "size": "s",
+          "tags": [
+            "pose",
+            "coco"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/yolo-yolo26s-pose-pt/20260822-160641.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "filename": "yolo26s-pose.onnx.enc",
+              "size_bytes": 41807451,
+              "encrypted": true,
+              "sha256_plain": "253b325c55814aa21f661f3161f71407ed30babc9d77c8fde9d873934d6897fb",
+              "sha256_enc": "3600a837128d9f410ab827028d24b34dca11a761142258d4fb268bfca707f4f1",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pose-pt-20260822-160641/yolo26s-pose.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "yolo26s-pose_meta.json",
+              "size_bytes": 706,
+              "encrypted": false,
+              "sha256_plain": "3f0e66cdf5e4b377e0f4019fb9bace02dd3a7f9f29990e73b97a92f2561f9d37",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pose-pt-20260822-160641/yolo26s-pose_meta.json",
+              "artifact_id": "meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "yolo26s-pose_labels.txt",
+              "size_bytes": 7,
+              "encrypted": false,
+              "sha256_plain": "51d7a35f479052ab571dc6996a486c94d766358e9dab8d223c98e455544e8080",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pose-pt-20260822-160641/yolo26s-pose_labels.txt",
+              "artifact_id": "labels",
+              "role": "labels",
+              "format": "txt"
+            },
+            {
+              "filename": "yolo26s-pose_export_report.json",
+              "size_bytes": 447,
+              "encrypted": false,
+              "sha256_plain": "01504317fb7447968d684c41660eb39f8844015be5b40dffecf9e4061c097709",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pose-pt-20260822-160641/yolo26s-pose_export_report.json",
+              "artifact_id": "report",
+              "role": "report",
+              "format": "json"
+            }
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "9f1f2b009bc616be6d7e69f4f6a92c3fefe2ffcbfc664fe01ede6a624f3c271b",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pose-pt-20260822-160641/manifest.json",
+            "release_id": "yolo26s-pose-20260822-153550"
           }
         }
       ]
