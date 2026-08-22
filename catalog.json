@@ -1,6 +1,6 @@
 {
   "catalog_version": "1",
-  "updated_at": "2026-08-22T18:30:36Z",
+  "updated_at": "2026-08-22T19:06:55Z",
   "models": [
     {
       "model_id": "lprocr-v2-n",
@@ -3774,6 +3774,266 @@
             "sha256_plain": "9f1f2b009bc616be6d7e69f4f6a92c3fefe2ffcbfc664fe01ede6a624f3c271b",
             "download_url": "https://github.com/OneclickEB/models-hub/releases/download/yolo-yolo26s-pose-pt-20260822-160641/manifest.json",
             "release_id": "yolo26s-pose-20260822-153550"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "lprocr-nv-lpr-m-pt",
+      "family": "lprocr",
+      "size": "m",
+      "tags": [
+        "lpr",
+        "ocr"
+      ],
+      "version_scheme": null,
+      "display_name": "nv-lpr-m.pt",
+      "versions": [
+        {
+          "version": "20260822-190617",
+          "description": "",
+          "released_at": "2026-08-22T18:30:37Z",
+          "size": "m",
+          "tags": [
+            "lpr",
+            "ocr"
+          ],
+          "headline_metric": null,
+          "extra_metrics": [],
+          "chart_series": [],
+          "rows_url": "https://raw.githubusercontent.com/OneclickEB/models-hub/main/metrics/lprocr-nv-lpr-m-pt/20260822-190617.json",
+          "rows_count": 0,
+          "artifacts": [
+            {
+              "filename": "nv-lpr-m-final-202608192128.onnx.enc",
+              "size_bytes": 9506147,
+              "encrypted": true,
+              "sha256_plain": "78c457b1deda45d81e4e933473c8eae5753664872736b49990d39c1931db73e6",
+              "sha256_enc": "5e606622569a7304f1af3987aac7b30468d83b65698da33a00ebf0437f237476",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128.onnx.enc",
+              "artifact_id": "onnx",
+              "role": "source",
+              "format": "onnx"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_meta.json",
+              "size_bytes": 1529,
+              "encrypted": false,
+              "sha256_plain": "4d76b190813f0452e9373a049d2a4f406151e19551a26f6a090c5c9cc7524654",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_meta.json",
+              "artifact_id": "meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_labels.txt",
+              "size_bytes": 78,
+              "encrypted": false,
+              "sha256_plain": "1a3edb3b8f2a8aa6040f82eeb10c8685ca6324a548c5d92ab4c88e552bf89f65",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_labels.txt",
+              "artifact_id": "labels",
+              "role": "labels",
+              "format": "txt"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_export_report.json",
+              "size_bytes": 474,
+              "encrypted": false,
+              "sha256_plain": "e7a923ffb44360b50f5f33988c1e1e17e385fd1c8e00f636e647c014a0cb2ea7",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_export_report.json",
+              "artifact_id": "report",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128.pt.enc",
+              "size_bytes": 28571667,
+              "encrypted": true,
+              "sha256_plain": "6068a2ced6a89bba6c94d9c85161a97c189ced32a7b75efe9972cc1462b58f12",
+              "sha256_enc": "f4821072741a77ada57d6362df88aca9aed1991e89e2539aca9746fefff92653",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128.pt.enc",
+              "artifact_id": "pt",
+              "role": "source",
+              "format": "pt"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_meta-j2.json",
+              "size_bytes": 1539,
+              "encrypted": false,
+              "sha256_plain": "6d22c3d981e5b058839a58696747218e7c55547b83faf545357cff00efbcea1e",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_meta-j2.json",
+              "artifact_id": "source-meta",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_export_report-j2.json",
+              "size_bytes": 1391,
+              "encrypted": false,
+              "sha256_plain": "a526566fb39d142c0a834fcee039c594385fb9f5e61b42892123e10ebc33f3e0",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_export_report-j2.json",
+              "artifact_id": "report-j2",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_snpe_qcs6490_fp32.dlc.enc",
+              "size_bytes": 13567918,
+              "encrypted": true,
+              "sha256_plain": "493f565a8328c1d9f448696f06575a6376a2b41335e2e56bab1c755b434864b3",
+              "sha256_enc": "58c5ffce5bf9418b5b3c9b8e72f5d388fce80ea4300e0ccbdeacec789da6235d",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_snpe_qcs6490_fp32.dlc.enc",
+              "artifact_id": "dlc-qcs6490",
+              "role": "weights",
+              "target": "qcs6490",
+              "format": "dlc_qcs6490"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_snpe_qcs6490_fp32_meta.json",
+              "size_bytes": 1639,
+              "encrypted": false,
+              "sha256_plain": "14b7bc4bf03e78f0e4cf6bef7ee493a99f478eba71ddb494ca1601cfd18c6003",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_snpe_qcs6490_fp32_meta.json",
+              "artifact_id": "meta-qcs6490",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_meta-j3.json",
+              "size_bytes": 1539,
+              "encrypted": false,
+              "sha256_plain": "ba3593934f773a54e344e100f6adbb1900dde4a097d7da23f7a33e6151530bda",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_meta-j3.json",
+              "artifact_id": "source-meta-j3",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_export_report-j3.json",
+              "size_bytes": 1432,
+              "encrypted": false,
+              "sha256_plain": "9993f19c8dde49e24b6bfce1d1060a015be3cd09be3d60873834c5df4a4f2d07",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_export_report-j3.json",
+              "artifact_id": "report-j3",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_snpe_qcs8550_fp16.dlc.enc",
+              "size_bytes": 8726702,
+              "encrypted": true,
+              "sha256_plain": "2b9638b61364c466096ea33ba3479774384d73a3d0a9e9bbc34b0bfe2a659576",
+              "sha256_enc": "7524797949291d91f54314f7577eb44cde619a42ab5ceddcead82b781c209ccb",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_snpe_qcs8550_fp16.dlc.enc",
+              "artifact_id": "dlc-qcs8550",
+              "role": "weights",
+              "target": "qcs8550",
+              "format": "dlc_qcs8550"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_snpe_qcs8550_fp16_meta.json",
+              "size_bytes": 1639,
+              "encrypted": false,
+              "sha256_plain": "4aff4c37768a051605aade49280ca5d166f9684db7d80f051f7a4d9dc93665f3",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_snpe_qcs8550_fp16_meta.json",
+              "artifact_id": "meta-qcs8550",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_qnn_htp_v68_int8_w8a16.bin.enc",
+              "size_bytes": 5742642,
+              "encrypted": true,
+              "sha256_plain": "3b8b42400945298b460b921fad38b4b9cf4e2119508646af55c4e5b6b71fe48e",
+              "sha256_enc": "b91cccc1dcaee49e07ecac14a53d8f7c936458cec698145d221dd404385eef65",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_qnn_htp_v68_int8_w8a16.bin.enc",
+              "artifact_id": "ctx",
+              "role": "context",
+              "target": "qcs6490",
+              "format": "bin_qcs6490"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_qnn_htp_v68_int8_w8a16_meta.json",
+              "size_bytes": 2187,
+              "encrypted": false,
+              "sha256_plain": "7b63beb05fd9ed9885ccdfc0259945290953b9d7ecfe8981fcb452cbed709f5b",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_qnn_htp_v68_int8_w8a16_meta.json",
+              "artifact_id": "meta-j4",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "attestation.json",
+              "size_bytes": 896,
+              "encrypted": false,
+              "sha256_plain": "239601f790f3e76910418fe2cf76441720a43568325d1fc8d77568df8fa7936f",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/attestation.json",
+              "artifact_id": "att",
+              "role": "attestation",
+              "format": "json"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_qnn_htp_v68_int8_w8a16_export_report.json",
+              "size_bytes": 4503,
+              "encrypted": false,
+              "sha256_plain": "2c234974cdfb79aa2565a8be055fad73489fc462dd3021d6a0f9ef6cb7db80e2",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_qnn_htp_v68_int8_w8a16_export_report.json",
+              "artifact_id": "report-j4",
+              "role": "report",
+              "format": "json"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_qnn_htp_v73_int8.bin.enc",
+              "size_bytes": 5582898,
+              "encrypted": true,
+              "sha256_plain": "2fa29f6c2e1d6140915bf3653cb474a24b319ae67f7fe59299b165314f6614dd",
+              "sha256_enc": "074446f31c5ba96e89e0c1726dcda1d07f6afff993de0725b8655422edaf526a",
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_qnn_htp_v73_int8.bin.enc",
+              "artifact_id": "ctx-j5",
+              "role": "context",
+              "target": "qcs8550",
+              "format": "bin_qcs8550"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_qnn_htp_v73_int8_meta.json",
+              "size_bytes": 2168,
+              "encrypted": false,
+              "sha256_plain": "857e61289eee22ec6c42bcf03b137981349deb6f2b76becb7ef3df01a24e2107",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_qnn_htp_v73_int8_meta.json",
+              "artifact_id": "meta-j5",
+              "role": "metadata",
+              "format": "meta"
+            },
+            {
+              "filename": "nv-lpr-m-final-202608192128_qnn_htp_v73_int8_export_report.json",
+              "size_bytes": 4332,
+              "encrypted": false,
+              "sha256_plain": "e81aa32de006c509edfcd67a55c335fd2839940ef0c12c97482fe17d24adf6f5",
+              "sha256_enc": null,
+              "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/nv-lpr-m-final-202608192128_qnn_htp_v73_int8_export_report.json",
+              "artifact_id": "report-j5",
+              "role": "report",
+              "format": "json"
+            }
+          ],
+          "manifest": {
+            "filename": "manifest.json",
+            "sha256_plain": "c39f3df14ce04e7aec58b942e631561ce1ded3b808de86576090da2f672e1697",
+            "download_url": "https://github.com/OneclickEB/models-hub/releases/download/lprocr-nv-lpr-m-pt-20260822-190617/manifest.json",
+            "release_id": "lprocr-nv-lpr-m-pt-20260822-190617"
           }
         }
       ]
